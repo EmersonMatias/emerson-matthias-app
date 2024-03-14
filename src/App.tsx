@@ -1,11 +1,12 @@
-import Header from "./components/Header/header"
+import HeroSection from "./components/HeroSection/hero-section"
 
 
 function App() {
 
   return (
     <main>
-      <Header />
+      <HeroSection/>
+      dfgdfgdfg
     </main>
   )
 }

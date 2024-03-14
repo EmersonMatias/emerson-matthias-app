@@ -15,10 +15,6 @@ export const Logo = styled.div`
     font-family: ${props => props.theme.fontFamily.cinzelDecorative};
     letter-spacing: -1rem;
     position: fixed;
-    left: 4rem;
-
-    .purple{
-        color: ${props => props.theme.colors.purple};
-    }
+    left: 16rem;
 `
 

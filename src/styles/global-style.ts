@@ -56,6 +56,11 @@ html{
 	color: ${props => props.theme.colors.white};
 	font-family: "Poppins", sans-serif;
 }
+
+
+.purple{
+	color: ${props => props.theme.colors.purple};
+}
 `
 
 export default GlobalStyle
