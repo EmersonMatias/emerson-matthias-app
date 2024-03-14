@@ -1,4 +1,5 @@
 import Header from "../Header/header";
+import { Button } from "../ui/button";
 import { Heading1Cinzel } from "../ui/heading-1";
 import { Heading4, Heading4Cinzel } from "../ui/heading-4";
 import { Heading5 } from "../ui/heading-5";
@@ -20,9 +21,10 @@ export default function HeroSection() {
                     <Heading4Cinzel>REVOLUCIONE SUA PRESENÇA <br /> DIGITAL</Heading4Cinzel>
                 </div>
 
-                <Heading5 fontWeightPoppins={300}>Se posicione no mercado com um visual atrativo e <br /> domine o jogo.</Heading5>
+                <Heading5 fontWeightPoppins={300}>Se posicione no mercado com um visual atrativo e <br /><span className="colorWord">domine o jogo.</span></Heading5>
             </Box2>
 
+            <Button>Quero estar no topo</Button>
         </Container>
     )
 }

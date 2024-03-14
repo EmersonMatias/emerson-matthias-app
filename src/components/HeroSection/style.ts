@@ -9,6 +9,9 @@ export const Container = styled.section`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
 
     .h1{
         margin: 2.4rem 0rem;
@@ -16,7 +19,7 @@ export const Container = styled.section`
 `
 
 export const Box1 = styled.div`
-    margin-top: 15%;
+    margin-top: 14%;
 `
 
 export const Box2 = styled.div`
@@ -32,5 +35,10 @@ export const Box2 = styled.div`
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent; 
+    }
+
+    .colorWord{
+        font-weight: 600;
+        color: #8F00FF;
     }
 `
