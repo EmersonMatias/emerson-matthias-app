@@ -6,5 +6,9 @@ export const theme = {
         gray10: '#DFDFDF',
         gray: '#F0F0F0',
         purple: "#9526ED"
+    },
+    fontFamily: {
+        poppins: '"Poppins", sans-serif',
+        cinzelDecorative: '"Cinzel Decorative", serif'
     }
 }
