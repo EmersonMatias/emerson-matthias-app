@@ -3,7 +3,9 @@ import { Button } from "../ui/button";
 import { Heading1Cinzel } from "../ui/heading-1";
 import { Heading4, Heading4Cinzel } from "../ui/heading-4";
 import { Heading5 } from "../ui/heading-5";
-import { Box1, Box2, Container } from "./style";
+import { Box1, Box2, Contacts, Container } from "./style";
+import Whatsapp from "../../assets/svg/Whatsapp.svg"
+import Linkedin from "../../assets/svg/Linkedin.svg"
 
 export default function HeroSection() {
     return (
@@ -23,6 +25,16 @@ export default function HeroSection() {
 
                 <Heading5 fontWeightPoppins={300}>Se posicione no mercado com um visual atrativo e <br /><span className="colorWord">domine o jogo.</span></Heading5>
             </Box2>
+
+            <Contacts>
+
+                <div className="line"></div>
+                <img src={Whatsapp} alt="Whatsapp" />
+                <a href="https://www.linkedin.com/in/emerson-matias/" target="_blank">
+                    <img src={Linkedin} alt="Linkedin" />
+                </a>
+
+            </Contacts>
 
             <Button>Quero estar no topo</Button>
         </Container>

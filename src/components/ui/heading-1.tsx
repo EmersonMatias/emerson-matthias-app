@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FontWeight } from "../../types/type";
 
 export const Heading1 = styled.h1<FontWeight>`
-    font-size: 8.98rem;
+  font-size: clamp(4.78rem, 1.98rem + 8.75vw, 8.98rem);
     font-weight: ${props => props.fontWeightPoppins ?? 400};
 `
 

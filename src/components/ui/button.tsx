@@ -16,4 +16,9 @@ export const Button = styled.button`
     &:hover{
         background-color: ${props => props.theme.colors.purple};
     }
+
+    @media screen and (max-width: 800px){
+        padding: 0.8rem  2.4rem;
+        border-radius: 0.8rem;
+    }
 `
