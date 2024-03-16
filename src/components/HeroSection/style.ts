@@ -28,9 +28,6 @@ export const Container = styled.section`
         text-align: center;
     }
 
-    @media screen and (max-width: 800px){
-     
-    }
 `
 
 export const Box1 = styled.div`

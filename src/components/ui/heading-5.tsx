@@ -6,7 +6,7 @@ export const Heading5 = styled.h5<FontWeight>`
     font-weight: ${props => props.fontWeightPoppins ?? 400};
 
     @media screen and (max-width: 800px){
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 `
 
