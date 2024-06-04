@@ -38,10 +38,10 @@ export default function Carossel2() {
                 <img className="w-5" src={leftArrow} alt="Flecha para a esquerda" />
             </button>
 
-    
-                <Card4 img={items[item - 1].img} title={items[item - 1].name} link={items[item - 1].link} key={items[item - 1].name} />
 
-           
+            <Card4 img={items[item - 1].img} title={items[item - 1].name} link={items[item - 1].link} key={items[item - 1].name} />
+
+
 
 
             <button className="pl-2 h-full z-10 max-md:w-[70px]" onClick={next}>

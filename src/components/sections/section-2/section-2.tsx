@@ -1,4 +1,12 @@
 import Carossel2 from "../../carrossel-2";
+import case1 from "../../../assets/img/case1.png"
+import case2 from "../../../assets/img/case2.png"
+import case3 from "../../../assets/img/case3.png"
+import case4 from "../../../assets/img/case4.png"
+import case5 from "../../../assets/img/case5.png"
+import case6 from "../../../assets/img/case6.png"
+import Card4 from "../../ui/card-4";
+
 
 export default function Section2() {
     return (
@@ -8,9 +16,47 @@ export default function Section2() {
 
 
 
+
+            <div className="flex flex-col gap-10">
+                {content.map(({img,link,name}) => (
+                    <Card4  img={img} link={link} title={name}/>
+                ))}
+            </div>
+
             <Carossel2 />
 
 
         </section>
     )
 }
+
+
+
+const content = [
+    {
+        img: case1,
+        name: "Advocacia Alves & Nascimento",
+        link: "https://alvesenascimento.com.br/",
+    },
+    {
+        img: case2,
+        name: "Farm RIO",
+        link: "https://www.farmrio.com.br/",
+    }, {
+        img: case3,
+        name: "Expert Beauty Center",
+        link: "https://www.expertbeautycenter.com.br/",
+    }, {
+        img: case4,
+        name: "Barbearia Corleone",
+        link: "https://www.barbeariacorleone.com.br/",
+    }, {
+        img: case5,
+        name: "Rodízio Ritorno",
+        link: "https://www.gransteak.com.br/?gclid=CjwKCAiAg9urBhB_EiwAgw88mdJiRsMTlU896mvf5IxvF5KY8ze5dFt-lnahbulp2Rv8l4TviqUfUhoCj5UQAvD_BwE",
+    }, {
+        img: case6,
+        name: "Rodízio Gran Steak",
+        link: "https://www.gransteak.com.br/?gclid=CjwKCAiAg9urBhB_EiwAgw88mdJiRsMTlU896mvf5IxvF5KY8ze5dFt-lnahbulp2Rv8l4TviqUfUhoCj5UQAvD_BwE",
+    }
+]
