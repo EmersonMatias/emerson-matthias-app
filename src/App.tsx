@@ -1,4 +1,3 @@
-import styled from "styled-components"
 import Section1 from "./components/sections/section-1/section-1"
 import Section2 from "./components/sections/section-2/section-2"
 import Section3 from "./components/sections/section-3/section-3"
@@ -7,7 +6,6 @@ import Section5 from "./components/sections/section-5/section-5"
 import Section6 from "./components/sections/section-6/section-6"
 import Footer from "./components/ui/footer"
 import Header from "./components/ui/header/header"
-import background from "./assets/img/backgroundPage.jpg"
 
 function App() {
 
