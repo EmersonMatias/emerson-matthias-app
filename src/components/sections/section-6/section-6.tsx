@@ -1,32 +1,41 @@
+import styled from "styled-components"
 import faq from "../../../assets/img/faq.png"
 import Card3 from "../../ui/card-3"
+import background from "../../../assets/img/backgroundSection6.webp"
 
 export default function Section6() {
     return (
-        <section className="bg-section6 bg-cover bg-left-top relative flex p-20 gap-10 justify-center items-center max-xl:px-10 max-lg:px-5 max-lg:flex-col max-lg:py-10">
+        <Container>
+            <section className=" relative flex p-20 gap-10 justify-center items-center max-xl:px-10 max-lg:px-5 max-lg:flex-col max-lg:py-10">
 
-            <img src={faq} alt="Perguntas e Respostas" className="w-[40%] max-w-[700px] h-fit lg:hidden max-lg:w-[70%] z-10" />
+                <img src={faq} alt="Perguntas e Respostas" className="w-[40%] max-w-[700px] h-fit lg:hidden max-lg:w-[70%] z-10" />
 
-            <div className="flex flex-col items-center z-10">
-                <h3 className="text-3xl font-medium mb-2 max-lg:text-center">Perguntas Frequentes</h3>
-                <h4 className="text-xl font-medium mb-8 max-lg:text-center">Tire suas dúvidas aqui</h4>
+                <div className="flex flex-col items-center z-10">
+                    <h3 className="text-3xl font-medium mb-2 max-lg:text-center">Perguntas Frequentes</h3>
+                    <h4 className="text-xl font-medium mb-8 max-lg:text-center">Tire suas dúvidas aqui</h4>
 
-                <div className="flex flex-col gap-3  max-lg:items-center max-lg:w-[100%]">
-                    {content.map(({ pergunta, resposta }) => (
-                        <Card3 pergunta={pergunta} resposta={resposta} key={pergunta} />
-                    ))}
+                    <div className="flex flex-col gap-3  max-lg:items-center max-lg:w-[100%]">
+                        {content.map(({ pergunta, resposta }) => (
+                            <Card3 pergunta={pergunta} resposta={resposta} key={pergunta} />
+                        ))}
+
+                    </div>
 
                 </div>
 
-            </div>
+                <img src={faq} alt="Perguntas e Respostas" className="w-[40%] max-w-[600px] h-fit max-lg:hidden z-10" />
 
-            <img src={faq} alt="Perguntas e Respostas" className="w-[40%] max-w-[600px] h-fit max-lg:hidden z-10" />
-
-            <div className="bg-gradient-to-b from-[transparent] to-[#060606] absolute top-0 left-0 w-full h-full bg-opacity-50 max-md:h-full" />
-        </section>
+                <div className="bg-gradient-to-b from-[transparent] to-[#060606] absolute top-0 left-0 w-full h-full bg-opacity-50 max-md:h-full" />
+            </section>
+        </Container>
     )
 }
 
+const Container = styled.div`
+    background-image: url(${background});
+    background-size: cover;
+    background-position: left top;
+`
 
 const content = [
     {

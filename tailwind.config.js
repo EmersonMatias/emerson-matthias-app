@@ -13,12 +13,7 @@ export default {
         cinzel: ["Cinzel Decorative", "serif"]
       },
       backgroundImage:{
-        'desktop': "url('./src/assets/img/backgroundDesktop.webp')",
-        "mobile": "url('./src/assets/img/background2.png')",
-        "section3": "url('./src/assets/img/backgroundSection3.png')",
         "teste": "url('./src/assets/img/teste.gif')",
-        "section6": "url('./src/assets/img/backgroundSection6.jpg')",
-        "section2": "url('./src/assets/img/diamond.png')"
       }
     },
   },

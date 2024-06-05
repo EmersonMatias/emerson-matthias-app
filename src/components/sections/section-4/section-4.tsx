@@ -1,4 +1,4 @@
-import imgSection4 from "../../../assets/img/imgSection4.png"
+import imgSection4 from "../../../assets/img/imgSection4.webp"
 import CallButton from "../../ui/call-button/call-button"
 import Card2 from "../../ui/card-2"
 import { contentCards2 } from "./cotent"

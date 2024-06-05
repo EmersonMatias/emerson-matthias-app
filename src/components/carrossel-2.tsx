@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Card4 from "./ui/card-4";
-import case1 from "../assets/img/case1.png"
-import case2 from "../assets/img/case2.png"
-import case3 from "../assets/img/case3.png"
-import case4 from "../assets/img/case4.png"
-import case5 from "../assets/img/case5.png"
-import case6 from "../assets/img/case6.png"
+import case1 from "../assets/img/case1.webp"
+import case2 from "../assets/img/case2.webp"
+import case3 from "../assets/img/case3.webp"
+import case4 from "../assets/img/case4.webp"
+import case5 from "../assets/img/case5.webp"
+import case6 from "../assets/img/case6.webp"
 import styled from "styled-components";
 import nextSvg from "../assets/svg/prev.svg"
 import prevSvg from "../assets/svg/next.svg"

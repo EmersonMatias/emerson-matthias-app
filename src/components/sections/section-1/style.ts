@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import backgroundDesktop from "../../../assets/img/backgroundDesktop.webp"
-import backgroundMobile from "../../../assets/img/background2.png"
+import backgroundMobile from "../../../assets/img/background2.webp"
 
 export const Container = styled.div`
     background-image: url(${backgroundDesktop});
