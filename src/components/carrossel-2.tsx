@@ -1,6 +1,4 @@
 import { useState } from "react";
-import rightArrow from "../assets/img/rightArrow.png"
-import leftArrow from "../assets/img/leftArrow.png"
 import Card4 from "./ui/card-4";
 import case1 from "../assets/img/case1.png"
 import case2 from "../assets/img/case2.png"
@@ -8,54 +6,84 @@ import case3 from "../assets/img/case3.png"
 import case4 from "../assets/img/case4.png"
 import case5 from "../assets/img/case5.png"
 import case6 from "../assets/img/case6.png"
-
+import styled from "styled-components";
+import nextSvg from "../assets/svg/prev.svg"
+import prevSvg from "../assets/svg/next.svg"
 
 export default function Carossel2() {
-    const [item, setItem] = useState(1);
-    const items = content;
-    const length = items.length;
+    const [card, setCard] = useState(1)
 
-
-    function next() {
-        if (item < length) {
-            setItem(item + 1);
-        } else {
-            setItem(1);
-        }
-    }
 
     function prev() {
-        if (item > 1) {
-            setItem(item - 1);
+        if (card === 1) {
+            setCard(6)
         } else {
-            setItem(length);
+            setCard(card - 1)
         }
     }
 
+    function next() {
+        if (card === 6) {
+            setCard(1)
+        } else {
+            setCard(card + 1)
+        }
+    }
+
+
     return (
-        <div className="w-[100%] h-fit flex items-center z-10 mt-10 justify-center">
-            <button className="pr-2  h-full z-10 max-md:w-[70px]" onClick={prev}>
-                <img className="w-5" src={leftArrow} alt="Flecha para a esquerda" />
-            </button>
+        <Container>
+
+            <Card4 img={content[0].img} link={content[0].link} title={content[0].name} atributes={`myElement ${card === 1 && "showCard"}`} />
+            <Card4 img={content[1].img} link={content[1].link} title={content[1].name} atributes={`myElement ${card === 2 && "showCard"}`} />
+            <Card4 img={content[2].img} link={content[2].link} title={content[2].name} atributes={`myElement ${card === 3 && "showCard"}`} />
+            <Card4 img={content[3].img} link={content[3].link} title={content[3].name} atributes={`myElement ${card === 4 && "showCard"}`} />
+            <Card4 img={content[4].img} link={content[4].link} title={content[4].name} atributes={`myElement ${card === 5 && "showCard"}`} />
+            <Card4 img={content[5].img} link={content[5].link} title={content[5].name} atributes={`myElement ${card === 6 && "showCard"}`} />
+
+            <div className="absolute bottom-0 flex gap-10">
+                <button onClick={prev}> <img src={prevSvg} className="w-10" alt="Botão de anterior" /> </button>
+                <button onClick={next}> <img src={nextSvg} className="w-10" alt="Botão de próximo" /> </button>
+            </div>
+ 
 
 
-            <Card4 img={items[item - 1].img} title={items[item - 1].name} link={items[item - 1].link} key={items[item - 1].name} />
-
-
-
-
-            <button className="pl-2 h-full z-10 max-md:w-[70px]" onClick={next}>
-                <img className="w-5" src={rightArrow} alt="Flecha para a direita" />
-            </button>
-        </div>
+        </Container>
     );
 }
+
+
+
+const Container = styled.div`
+    width: 100%;
+    height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    .myElement{
+        opacity: 0;
+        transition: all 1s ease-in-out;
+       
+    }
+
+    .showCard{
+        opacity: 1;
+    }
+
+
+    @media not all and (min-width: 768px) {
+        height: 520px;
+    }
+`
 
 
 const content = [
     {
         img: case1,
-        name: "Advocacia Alves & Nascimento",
+        name: "Alves & Nascimento",
         link: "https://alvesenascimento.com.br/",
     },
     {
