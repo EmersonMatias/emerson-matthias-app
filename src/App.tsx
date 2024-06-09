@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const tagManagerArgs = {
-        gtmId: "GTM-TPGNWXR5"
+        gtmId: "GTM-TTV732ZW5"
     }
 
     TagManager.initialize(tagManagerArgs)
