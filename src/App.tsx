@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import Section1 from "./components/sections/section-1/section-1"
 import Section2 from "./components/sections/section-2/section-2"
 import Section3 from "./components/sections/section-3/section-3"
@@ -6,8 +7,17 @@ import Section5 from "./components/sections/section-5/section-5"
 import Section6 from "./components/sections/section-6/section-6"
 import Footer from "./components/ui/footer"
 import Header from "./components/ui/header/header"
+import TagManager from "react-gtm-module"
 
 function App() {
+
+  useEffect(() => {
+    const tagManagerArgs = {
+        gtmId: "GTM-TPGNWXR5"
+    }
+
+    TagManager.initialize(tagManagerArgs)
+}, [])
 
   return (
     <main className="bg-[#060606] font-outif text-white relative">
