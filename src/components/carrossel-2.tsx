@@ -41,7 +41,7 @@ export default function Carossel2() {
             <Card4 img={content[4].img} link={content[4].link} title={content[4].name} atributes={`myElement ${card === 5 && "showCard"}`} />
             <Card4 img={content[5].img} link={content[5].link} title={content[5].name} atributes={`myElement ${card === 6 && "showCard"}`} />
 
-            <div className="absolute bottom-0 flex gap-10">
+            <div className="absolute bottom-0 flex gap-10 hidden">
                 <button onClick={prev}> <img src={prevSvg} className="w-10" alt="Botão de anterior" /> </button>
                 <button onClick={next}> <img src={nextSvg} className="w-10" alt="Botão de próximo" /> </button>
             </div>
@@ -56,15 +56,15 @@ export default function Carossel2() {
 
 const Container = styled.div`
     width: 100%;
-    height: 620px;
+    height: fit-content;
+    gap: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: relative;
 
     .myElement{
-        opacity: 0;
+        opacity: 1;
         transition: all 1s ease-in-out;
        
     }
@@ -74,9 +74,11 @@ const Container = styled.div`
     }
 
 
+   /*
     @media not all and (min-width: 768px) {
         height: 520px;
     }
+   */
 `
 
 
@@ -101,7 +103,7 @@ const content = [
     }, {
         img: case5,
         name: "Rodízio Ritorno",
-        link: "https://www.gransteak.com.br/?gclid=CjwKCAiAg9urBhB_EiwAgw88mdJiRsMTlU896mvf5IxvF5KY8ze5dFt-lnahbulp2Rv8l4TviqUfUhoCj5UQAvD_BwE",
+        link: "https://ritornopizzaria.com.br/",
     }, {
         img: case6,
         name: "Rodízio Gran Steak",

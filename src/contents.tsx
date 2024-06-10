@@ -5,5 +5,4 @@ export function sendToWpp(mensagem: string) {
 
 export function sendToSite(link: string){
     return window.open(`${link}`, '_blank');
-
 }

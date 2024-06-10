@@ -21,6 +21,7 @@ const Container = styled.div`
     background-image: url(${diamond});
     background-repeat: no-repeat;
     background-position: left;
+    height: fit-content;
 
     @media not all and (min-width: 1024px) {
 
